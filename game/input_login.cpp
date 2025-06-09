@@ -28,7 +28,11 @@
 #include "horsename_manager.h"
 #include "MarkManager.h"
 #include "../../common/CommonDefines.h"
-
+#ifdef ENABLE_ADVANCED_FLOOD_PROTECTION
+#include <unordered_map>
+#include <string>
+#include <chrono>
+#endif
 #ifdef ENABLE_WOLFMAN_CHARACTER
 
 // #define USE_LYCAN_CREATE_POSITION
